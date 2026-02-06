@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Construction</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes slow-pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.8; transform: scale(1.05); }
+        }
+        .animate-slow-pulse {
+            animation: slow-pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200 min-h-screen flex flex-col items-center justify-center p-6 font-sans selection:bg-indigo-500/30">
+
+    <!-- Back Button -->
+    <div class="fixed top-8 left-8">
+        <button 
+            onclick="window.history.back()" 
+            class="group flex items-center gap-2 px-4 py-2 rounded-full glass hover:bg-white/10 transition-all duration-300 text-sm font-medium border border-white/10"
+        >
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:-translate-x-1">
+                <path d="m15 18-6-6 6-6"/>
+            </svg>
+            Take me back
+        </button>
+    </div>
+
+    <!-- Main Content -->
+    <main class="text-center max-w-2xl">
+        <!-- Visual Element -->
+        <div class="mb-12 relative flex justify-center">
+            <div class="absolute inset-0 bg-indigo-500/20 blur-[100px] rounded-full animate-slow-pulse"></div>
+            <div class="relative glass p-8 rounded-3xl">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-indigo-400">
+                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                </svg>
+            </div>
+        </div>
+
+        <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-white mb-6">
+            uh oh. <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">Hilang arah?</span>
+        </h1>
+        
+        <p class="text-slate-400 text-lg md:text-xl leading-relaxed mb-10 max-w-lg mx-auto">
+            Sub-Page ini sedang dalam pembangunan, cek kembali bulan depan 😁
+        </p>
+        </div>
+
+        <!-- Social/Contact Links -->
+        <div class="flex gap-6 justify-center">
+            <a href="https://www.instagram.com/osis.smaza16_/" class="text-slate-500 hover:text-white transition-colors">Instagram</a>
+            <a href="mailto:osissmaialazhar16@gmail.com" class="text-slate-500 hover:text-white transition-colors">Email</a>
+            <a href="https://maps.app.goo.gl/eMFUouHafT9pzwXE6" class="text-slate-500 hover:text-white transition-colors">Location</a>
+        </div>
+    </main>
+
+    <!-- Footer Decoration -->
+    <footer class="fixed bottom-8 text-slate-600 text-xs uppercase tracking-widest font-semibold">
+        © 2025 OSIS SMA Islam Al Azhar 16
+    </footer>
+
+</body>
+</html> 
